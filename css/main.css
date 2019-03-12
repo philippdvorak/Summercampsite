@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#heroDiv {
+  margin-top: -55px;
+  height: 100vh;
+}
+
+#heroImage {
+  background-image: url("../img/testHero.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}

@@ -7,12 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Summercamp 2019</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" id="navbar">
     <!-- Change to bg-light for lightgrey background -->
 
     <a href="#" class="navbar-brand">
@@ -27,7 +29,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a href="#kurse" class="nav-link">Kurse</a>
+          <a href="#courses" class="nav-link">Kurse</a>
         </li>
         <li class="nav-item">
           <a href="#location" class="nav-link">Standorte</a>
@@ -39,8 +41,26 @@
     </div>
   </nav>
 
-  <div class="container-fluid" style="height: 100vh; background-color: grey;">
+  <div id="heroDiv">
     <!-- Div for Heroimage -->
+    <div id="heroImage">
+      <!-- Div for Text on Hero Image -->
+    </div>
+  </div>
+
+  <!-- Div for Page Content -->
+  <div data-spy="scroll" data-target:"#navbar" data-offset="0">
+    <div id="courses">
+
+    </div>
+
+    <div id="location">
+
+    </div>
+
+    <div id="contacts">
+
+    </div>
   </div>
 </body>
 
