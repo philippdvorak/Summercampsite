@@ -56,11 +56,8 @@ body {
   animation:jump 6.5s infinite;
 }
 
-.fas {
+#courses .fas {
   text-align: center;
-}
-
-.fa-camera {
   color: #ffb347;
 }
 
