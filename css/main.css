@@ -16,17 +16,16 @@ body {
 }
 
 #heroDiv {
-  margin-top: -60px;
   height: 100vh;
 }
 
-#heroImage {
-  background-image: url("../img/testHero.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+.heroImage {
+  display:none;
+  height:100%;
   background-size: cover;
-  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  position:relative;
 }
 
 .heroText {
