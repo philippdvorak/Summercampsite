@@ -6,8 +6,17 @@
   overflow: hidden;
 }
 
+body {
+  position: reltive;
+}
+
+#navbar {
+  height: 60px;
+  overflow-y: scroll;
+}
+
 #heroDiv {
-  margin-top: -55px;
+  margin-top: -60px;
   height: 100vh;
 }
 
