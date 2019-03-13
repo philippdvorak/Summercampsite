@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+@keyframes jump {
+  0% {
+    margin-top:-50px;
+  }
+  50% {
+    margin-top:-150px;
+  }
+  100% {
+    margin-top: -50px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +26,7 @@ body {
 }
 
 #heroDiv {
+  margin-top:-55px;
   height: 100vh;
 }
 
@@ -33,6 +46,14 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffb347;
+}
+
+#jumping-arrow {
+  text-align:center;
+  margin-top:-50px;
+  color:white;
+  position:relative;
+  animation:jump 6.5s infinite;
 }
 
 .fas {

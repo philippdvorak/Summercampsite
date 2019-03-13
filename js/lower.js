@@ -1,5 +1,6 @@
-var myIndex = 0;
+var myIndex = 0; //index for hero slideshow (carousel)
 carousel();
+addHeroText();
 
 function carousel() {
   var i;
@@ -12,4 +13,10 @@ function carousel() {
 
   x[myIndex-1].style.display = "block";
   setTimeout(carousel, 2000);
+}
+
+function addHeroText() {
+  $(".heroImage").append(
+    '<div class="heroText"><h1>Summercamp 2019</h1><h3>4 Wochen 4 Standorte</h3></div>'
+  );
 }
