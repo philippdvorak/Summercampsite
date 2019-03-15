@@ -36,6 +36,7 @@ body {
 
 #navbar {
   overflow-y: scroll;
+  background-color: #2E2E2E;
 }
 
 #heroDiv {
