@@ -12,8 +12,6 @@
   }
 }
 
-<<<<<<< Updated upstream
-=======
 @keyframes rotation {
   0% {
     transform: rotate(10deg);
@@ -27,7 +25,6 @@
     transform: rotate(10deg);
   }
 }
->>>>>>> Stashed changes
 
 * {
   margin: 0;
@@ -40,6 +37,7 @@ body {
 
 #navbar {
   overflow-y: scroll;
+  background-color: #2E2E2E;
 }
 
 #heroDiv {
