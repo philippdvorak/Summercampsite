@@ -98,7 +98,7 @@ body {
 .parallax {
   background-image: url("../img/camera.jpg");
   background-attachment: fixed;
-  height:30vh;
+  height:40vh;
   margin-top:50px;
   margin-bottom:50px;
 }
