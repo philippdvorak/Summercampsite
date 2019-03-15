@@ -12,6 +12,22 @@
   }
 }
 
+<<<<<<< Updated upstream
+=======
+@keyframes rotation {
+  0% {
+    transform: rotate(10deg);
+  }
+
+	50% {
+    transform: rotate(-10deg);
+  }
+
+	100% {
+    transform: rotate(10deg);
+  }
+}
+>>>>>>> Stashed changes
 
 * {
   margin: 0;
@@ -59,15 +75,21 @@ body {
   animation:jump 6.5s infinite;
 }
 
-#courses .fas {
+.content .fas {
   text-align: center;
   color: #ffb347;
   padding: 20px;
+  animation: rotation 10s infinite;
+}
+
+.content .row {
+  display: flex;
+  justify-content: center;
 }
 
 .content {
   text-align: center;
   padding: 0 50px;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
