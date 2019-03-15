@@ -1,10 +1,12 @@
 var myIndex = 0; //index for hero slideshow (carousel)
 carousel();
 
-$(document).scroll(function() {
-  $(".heroText").css("opacity", "0");
+$(document).ready(function() {
+  $(document).scroll(function() {
+    if(document.body.scrollTop > ($(".content").offset().top) / 2)
+    $(".heroText").css("opacity", "0");
+  });
 });
-
 function carousel() {
   var i;
   var x = document.getElementsByClassName("heroImage");
