@@ -8,7 +8,7 @@
   <title>Summercamp 2019</title>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Rajdhani|Thasadith" rel="stylesheet">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -39,7 +39,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav" style="">
         <li class="nav-item">
-          <a href="#courses" class="nav-link">Kurse</a>
+          <a href="#courses" class="nav-link">Programm</a>
         </li>
         <li class="nav-item">
           <a href="#location" class="nav-link">Standorte</a>
@@ -57,6 +57,11 @@
     <div class="heroImage" style='background-image:url("img/code.jpg")'></div>
     <div class="heroImage" style='background-image:url("img/micro.jpg")'></div>
 
+    <div class="heroText">
+      <h1>Summercamp 2019</h1>
+      <h3>4 Wochen 4 Standorte</h3>
+    </div>
+
     <div id="jumping-arrow">
       <i class="fas fa-chevron-circle-down fa-3x"></i>
     </div>
@@ -64,43 +69,45 @@
 
   <!-- Div for Page Content -->
   <div data-spy="scroll" data-target:"#navbar" data-offset="0" class="content">
-    <div id="courses">
+    <div id="programme">
       <h2>Programm</h2>
       <p>Wir bieten an 4 Standorten, jeweils für eine Woche pro Standort ein vielseitiges Programm.</p>
 
       <script type="text/javascript">
-        createCardRow("#courses");
-        createCardCol("#courses", "fas fa-code fa-7x", "Programmieren", "Wolltest du schon immer ein eigenes Programm schreiben?");
-        createCardCol("#courses", "fas fa-microchip fa-7x", "Schaltungen", "Wolltest du schon immer eine kleine Schaltung mit Lichtern und Schaltern bauen?");
-        createCardCol("#courses", "fas fa-camera fa-7x", "Fotografie", "Wolltest du schon immer professionell Bilder bearbeiten?");
-        createCardCol("#courses", "fas fa-vr-cardboard fa-7x", "Virtual Reality", "Wolltest du schon immer in eine virtuelle Realität eintauchen?");
+        createCardRow("#programme");
+        createCardCol("#programme", "fas fa-code fa-7x", "Programmieren", "Wolltest du schon immer ein eigenes Programm schreiben?");
+        createCardCol("#programme", "fas fa-microchip fa-7x", "Schaltungen", "Wolltest du schon immer eine kleine Schaltung mit Lichtern und Schaltern bauen?");
+        createCardCol("#programme", "fas fa-camera fa-7x", "Fotografie", "Wolltest du schon immer professionell Bilder bearbeiten?");
+        createCardCol("#programme", "fas fa-vr-cardboard fa-7x", "Virtual Reality", "Wolltest du schon immer in eine virtuelle Realität eintauchen?");
       </script>
     </div>
 
+    <div class="parallax"></div>
+
     <div id="location">
       <h1>Standorte</h1>
-      <p>Unser 4 Wöchiges Summercamp findet an 4 verschiedene Standorte.</p>
+      <p>Unser 4 wöchiges Summercamp findet an 4 verschiedene Standorte statt.</p>
       <div class="row">
-        <div class="col-md-6 border">
-          <img src="" alt="">
-          <h3>Landesklinikum Schiebbs (05.08 - 09.08.2019)</h3>
+        <div id="scheibbs" class="col-md-6 border">
+          <h3>Landesklinikum Schiebbs</h3>
+          <h5>05.08 - 09.08.2019</h5>
           <p> Eisenwurzenstraße 26 <br> 3270 Scheibbs</p>
         </div>
-        <div class="col-md-6 border border-left-0">
-          <img src="" alt="">
-          <h3>PH Melk (12.08 - 19.08.2019)</h3>
+        <div id="melk" class="col-md-6 border border-left-0">
+          <h3>PH Melk</h3>
+          <h5>12.08 - 19.08.2019</h5>
           <p> Abt Karl-Straße 23 <br> 3390 Melk</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 border border-top-0">
-          <img src="" alt="">
-          <h3>Remise Amstetten (19.08 - 23.08.2019)</h3>
+        <div id="amstetten" class="col-md-6 border border-top-0">
+          <h3>Remise Amstetten</h3>
+          <h5>19.08 - 23.08.2019</h5>
           <p> Eggersdorfer Str. 29 <br> 3300 Amstetten</p>
         </div>
-        <div class="col-md-6 border border-left-0 border-top-0">
-          <img src="" alt="">
-          <h3>IT-HTL Ybbs (12.08 - 19.08.2019)</h3>
+        <div id="ybbs" class="col-md-6 border border-left-0 border-top-0">
+          <h3>IT-HTL Ybbs</h3>
+          <h5>26.08 - 30.08.2019</h5>
           <p> Schulring 6-12 <br> 3370 Ybbs</p>
         </div>
       </div>
