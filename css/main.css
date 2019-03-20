@@ -131,7 +131,6 @@ nav ul li a:hover:after {
   position:relative;
   text-align: center;
   width: 100%;
-
 }
 .content .fas {
   text-align: center;
@@ -154,9 +153,16 @@ nav ul li a:hover:after {
   height:40vh;
 }
 
+#programme {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 #location {
   width:80%;
   margin:0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 #location .row div {
   background-size:cover;
@@ -168,4 +174,9 @@ nav ul li a:hover:after {
 
 #ybbs, #scheibbs, #amstetten, #melk {
   background-image: url('../img/htl.jpeg');
+}
+
+#contacts {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
