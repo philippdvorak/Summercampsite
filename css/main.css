@@ -1,14 +1,15 @@
 @charset "UTF-8";
 
+/* Keyframes */
 @keyframes jump {
   0% {
-    margin-top: -50px;
+    margin-top: -70px;
   }
   50% {
     margin-top: -150px;
   }
   100% {
-    margin-top: -50px;
+    margin-top: -70px;
   }
 }
 @keyframes rotation {
@@ -40,7 +41,7 @@
   }
 }
 
-
+/* */
 * {
   margin: 0;
   padding: 0;
@@ -86,6 +87,7 @@ nav ul li a:hover:after {
 #heroDiv {
   margin-top:-55px;
   height: 100vh;
+  overflow: auto;
 }
 .heroImage {
   display:none;
@@ -96,33 +98,41 @@ nav ul li a:hover:after {
   background-position: center;
   background-attachment: fixed;
 }
-
 .heroText {
-  text-align: center;
   position:fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 1s;
+  text-align:center;
+  transform: translateY(var(--moveY)) scale(var(--scale));
+  margin:0 auto;
+  width:30%;
+  background-color: white;
+  color:black;
+  padding:20px 0px;
+  mix-blend-mode: screen;
+  top:40%;
+  left:35%;
 }
 .heroText h1 {
-  color:#ffb347;
   font-family: 'Josefin Sans', sans-serif;
   font-variant: small-caps;
 }
 .heroText h3 {
-  color:white;
   font-family: 'Rajdhani', sans-serif;
 }
 
 #jumping-arrow {
   text-align:center;
-  margin-top:-50px;
+
   color:white;
   position:relative;
   animation:jump 6.5s infinite;
 }
 
+.content {
+  position:relative;
+  text-align: center;
+  width: 100%;
+
+}
 .content .fas {
   text-align: center;
   color: #ffb347;
@@ -133,18 +143,15 @@ nav ul li a:hover:after {
   display: flex;
   justify-content: center;
 }
-.content {
-  text-align: center;
-  width: 100%;
-  padding-top:20px;
+.content-section {
+  background-color:white;
+  padding:60px 0px;
 }
 
 .parallax {
   background-image: url("../img/camera.jpg");
   background-attachment: fixed;
   height:40vh;
-  margin-top:50px;
-  margin-bottom:50px;
 }
 
 #location {
