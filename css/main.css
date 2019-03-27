@@ -52,10 +52,6 @@ body {
   overflow-x: hidden;
 }
 
-#navbar {
-  background-color: #2E2E2E;
-}
-
 nav ul li a {
   position: relative;
   transition: all 1s;
@@ -179,4 +175,19 @@ nav ul li a:hover:after {
 #contacts {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+#cards {
+  width: 80vw;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 1200px) {
+  #cards {
+    width: 15vw;
+    display: inline;
+    margin-bottom: 20px;
+  }
 }
