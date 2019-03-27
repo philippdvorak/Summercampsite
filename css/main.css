@@ -144,7 +144,7 @@ nav ul li a:hover:after {
 }
 
 .parallax {
-  background-image: url("../img/camera.jpg");
+  background-image: url("../img/Code.jpg");
   background-attachment: fixed;
   height:40vh;
 }
@@ -166,6 +166,11 @@ nav ul li a:hover:after {
   color: black;
   height:30vh;
   padding-top:50px;
+  transition:0.8s;
+}
+#location .row div:hover {
+  box-shadow: inset 0 0 0 0px rgba(255,179,71,0.8);
+
 }
 
 #ybbs, #scheibbs, #amstetten, #melk {
