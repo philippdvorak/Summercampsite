@@ -97,27 +97,28 @@ nav ul li a:hover:after {
 .heroText {
   position:fixed;
   text-align:center;
-  transform: translateY(var(--moveY)) scale(var(--scale));
+  /*transform: translateY(var(--moveY)) scale(var(--scale));*/
   margin:0 auto;
   width:30%;
   background-color: white;
   color:black;
   padding:20px 0px;
-  mix-blend-mode: screen;
   top:40%;
   left:35%;
+  z-index:1;
 }
 .heroText h1 {
   font-family: 'Josefin Sans', sans-serif;
   font-variant: small-caps;
+  z-index:1;
 }
 .heroText h3 {
   font-family: 'Rajdhani', sans-serif;
+  z-index:1;
 }
 
 #jumping-arrow {
   text-align:center;
-
   color:white;
   position:relative;
   animation:jump 6.5s infinite;
@@ -127,6 +128,7 @@ nav ul li a:hover:after {
   position:relative;
   text-align: center;
   width: 100%;
+  z-index:1000;
 }
 .content .fas {
   text-align: center;
@@ -146,6 +148,7 @@ nav ul li a:hover:after {
 .parallax {
   background-image: url("../img/Code.jpg");
   background-attachment: fixed;
+  background-size:cover;
   height:40vh;
 }
 
@@ -176,10 +179,10 @@ nav ul li a:hover:after {
 #ybbs, #scheibbs, #amstetten, #melk {
   background-image: url('../img/htl.jpeg');
 }
-
-#contacts {
+#contact {
   margin-top: 20px;
   margin-bottom: 20px;
+
 }
 
 #cards {
@@ -195,4 +198,49 @@ nav ul li a:hover:after {
     display: inline;
     margin-bottom: 20px;
   }
+}
+
+/* Modal Contact Box */
+#openContact {
+  padding:10px 20px;
+  background-color: #ffb347;
+  border:none;
+  font-variant: small-caps;
+}
+#openContact:hover {
+  background-color: #ff9c11;
+  transition:0.5s;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+}
+.close-modal {
+  color: #aaa;
+  float: left;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal-content ul {
+  list-style-type: none;
+}
+.close-modal:hover,
+.close-modal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

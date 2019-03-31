@@ -42,3 +42,23 @@ window.addEventListener('scroll', function() {
     ticking = true;
   }
 });
+//
+
+/* Modal Contact Box */
+var modal = document.getElementById('contact-modal');
+var btn = document.getElementById("openContact");
+var span = document.getElementsByClassName("close-modal")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
