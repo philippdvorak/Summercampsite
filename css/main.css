@@ -187,8 +187,6 @@ nav ul li a:hover:after {
 
 #cards {
   width: 80vw;
-  margin-left: 10px;
-  margin-right: 10px;
   margin-bottom: 40px;
 }
 
@@ -196,6 +194,8 @@ nav ul li a:hover:after {
   #cards {
     width: 15vw;
     display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 20px;
   }
 }
