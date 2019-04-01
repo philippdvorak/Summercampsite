@@ -27,6 +27,7 @@ var scroll_position = 0;
 var ticking = false;
 
 function doSomething(scroll_pos) {
+  console.log(1 - scroll_pos / window.innerHeight);
   mutate(1 - scroll_pos / window.innerHeight);
 }
 

@@ -97,7 +97,7 @@ nav ul li a:hover:after {
 .heroText {
   position:fixed;
   text-align:center;
-  /*transform: translateY(var(--moveY)) scale(var(--scale));*/
+  transform: translateY(var(--moveY)) scale(var(--scale));
   margin:0 auto;
   width:30%;
   background-color: white;
@@ -107,14 +107,13 @@ nav ul li a:hover:after {
   left:35%;
   z-index:1;
 }
+
 .heroText h1 {
   font-family: 'Josefin Sans', sans-serif;
   font-variant: small-caps;
-  z-index:1;
 }
 .heroText h3 {
   font-family: 'Rajdhani', sans-serif;
-  z-index:1;
 }
 
 #jumping-arrow {
@@ -139,6 +138,7 @@ nav ul li a:hover:after {
 .content .row {
   display: flex;
   justify-content: center;
+  z-index: 1000;
 }
 .content-section {
   background-color:white;
@@ -179,10 +179,10 @@ nav ul li a:hover:after {
 #ybbs, #scheibbs, #amstetten, #melk {
   background-image: url('../img/htl.jpeg');
 }
+
 #contact {
   margin-top: 20px;
   margin-bottom: 20px;
-
 }
 
 #cards {
