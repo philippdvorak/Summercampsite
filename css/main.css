@@ -28,11 +28,11 @@
 @keyframes fill {
   0% {
     width: 0%;
-    height: 1px;
+    height: 3px;
   }
   50% {
     width: 100%;
-    height: 1px;
+    height: 3px;
   }
   100% {
     width: 100%;
@@ -139,7 +139,6 @@ nav ul li a:hover:after {
   text-align: center;
   width: 100%;
   z-index:1000;
-
 }
 .content .fas {
   text-align: center;
@@ -164,8 +163,7 @@ nav ul li a:hover:after {
 }
 
 #programme {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding:20px 40px;
   background-color:white;
 }
 
@@ -187,13 +185,10 @@ nav ul li a:hover:after {
   box-shadow: inset 0 0 0 0px rgba(255,179,71,0.8);
 }
 
-#ybbs, #scheibbs, #amstetten, #melk {
-  background-image: url('../img/htl.jpeg');
-}
-
 #contact {
   margin-top: 20px;
   margin-bottom: 20px;
+  padding:0 40px;
 }
 
 #cards {
